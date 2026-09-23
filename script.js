@@ -69,3 +69,64 @@ function modificarPorElMayor(arreglo,numero1,numero2){
 }
 
 
+//Crea una función llamada borrarAlFinal que reciba un arreglo y retorne el arreglo sin el último elemento.
+
+
+function borrarAlFinal(arreglo){
+
+    arreglo.splice(-1,1)
+
+    return arreglo
+}
+
+//Crea una función llamada borrarYContarElementos que reciba un arreglo y un número (cantidad). La función debe eliminar la cantidad de elementos especificados desde la posición 0 del arreglo y luego retornar la cantidad de elementos del arreglo final.
+
+function borrarYContarElementos(arreglo,numero){
+
+    arreglo.splice(0,numero)
+
+    return arreglo.length
+}
+
+/* Fin */
+
+
+
+/*
+Crea una función llamada rotarALaIzquierda, la cual debe recibir como parámetro un arreglo.
+
+La función debe eliminar el primer elemento del arreglo y luego agregar este mismo elemento al final.
+
+Retorna el arreglo modificado.
+
+*/
+
+
+function rotarALaIzquierda(arreglo){
+    let primero = arreglo[0]
+
+    arreglo.splice(0,1)
+
+    arreglo.push(primero)
+
+    return arreglo
+}
+
+//Crea una función llamada juntarArreglos que reciba dos parámetros, arreglo1 y arreglo2, y retorne un nuevo arreglo con los elementos de ambos arreglos exlcuyendo el primer elemento de cada arreglo.
+
+/* Escribe tu código aquí */
+
+function juntarArreglos(arreglo1,arreglo2){
+
+    arreglo1.splice(0,1)
+    arreglo2.splice(0,1)
+    let arreglo3 = arreglo1.concat(arreglo2) 
+    return arreglo3
+}
+
+
+/* Fin */
+console.log(juntarArreglos([10, 20, 30, 40], [50, 60, 70, 80]))
+console.log(juntarArreglos(["a", "b", "c"], ["d", "e", "f"]))
+
+
