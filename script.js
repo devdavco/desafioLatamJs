@@ -153,3 +153,20 @@ function rotarALaDerecha(arreglo){
 
 console.log(rotarALaDerecha([5, 6, 7, 8, 9]));
 console.log(rotarALaDerecha(['a', 'b', 'c', 'd', 'e'])); 
+
+/*Crea una función llamada izqDerecha que reciba un parámetro llamado arreglo y otro llamado num.
+
+Si num es menor que 100, el valor se ingresará por la derecha del arreglo, como normalmente se ingresan todos los valores.
+Si el valor es mayor o igual a 100, el valor se ingresará por la izquierda del arreglo.
+La función debe retornar el arreglo modificado.
+
+*/
+
+function izqDerecha(arreglo, num){
+    if(num<100){
+        arreglo.push(num)
+    }else{
+        arreglo.unshift(num)
+    }
+    return arreglo
+}
