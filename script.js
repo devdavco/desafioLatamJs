@@ -130,3 +130,13 @@ console.log(juntarArreglos([10, 20, 30, 40], [50, 60, 70, 80]))
 console.log(juntarArreglos(["a", "b", "c"], ["d", "e", "f"]))
 
 
+// Crea una función que reciba 3 valores arr1, valor y arr2, donde arr1 y arr2 serán arreglos y valor un número, la función debe retornar un nuevo arreglo juntando los elementos de arr1, el valor y los elementos de arr2.
+
+
+function juntarElementos(arr1,valor,arr2){
+
+    
+    return arr1.concat(valor,arr2)
+
+}
+
