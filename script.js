@@ -140,3 +140,16 @@ function juntarElementos(arr1,valor,arr2){
 
 }
 
+//Para este ejercicio, crea una función llamada rotarALaDerecha que reciba un arreglo y retorne el arreglo rotado a la derecha.
+
+function rotarALaDerecha(arreglo){
+
+    let ultimoItem = arreglo.pop()
+    arreglo.unshift(ultimoItem)
+    return arreglo
+}
+
+
+
+console.log(rotarALaDerecha([5, 6, 7, 8, 9]));
+console.log(rotarALaDerecha(['a', 'b', 'c', 'd', 'e'])); 
